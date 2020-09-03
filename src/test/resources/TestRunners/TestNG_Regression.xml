@@ -5,7 +5,7 @@
 
 <!-- thread-count = "3" parallel = "tests"  verbose="1" -->
 	
-	<listeners>
+<!--	<listeners>
 		<listener class-name="com.qa.hubspot.listeners.ExtentReportListener" />
 		<listener class-name="com.qa.hubspot.listeners.ScreenshotListener" /> 		
 		<listener class-name="com.qa.hubspot.listeners.pdfListener" />			
@@ -13,7 +13,7 @@
 		<listener class-name="com.qa.hubspot.listeners.TesultsListener" />
 			
 	</listeners>
-
+-->
 	
 	<test name="Login page Test">
 		<parameter name="browser" value="chrome" />
@@ -21,7 +21,7 @@
 			<class name="com.qa.hubspot.tests.LoginPageTest" />
 		</classes>
 	</test>
-	
+<!--	
 	<test name="Home page Test">
 		<parameter name="browser" value="chrome" />
 		<classes>
@@ -35,5 +35,5 @@
 			<class name="com.qa.hubspot.tests.ContactsPageTest" />
 		</classes>
 	</test>
-
+-->
 </suite>

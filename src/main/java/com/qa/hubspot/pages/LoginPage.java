@@ -59,6 +59,7 @@ public class LoginPage extends BasePage
 	
 	@Step("Logging in with google login credentials and provided username is : {0}")
 	public HomePage doLogin(String un, String pwd) {
+		System.out.println("Login to the application");
 		eleUtil.doClick(googleSignInBtn);
 		try {Thread.sleep(3000);}catch(Exception e) {}
 		eleUtil.doSendKeys(gmailID, un);
